@@ -1,0 +1,24 @@
+h1. With Reverse Lookup
+
+Extends a hash to be able to look up keys by value (for bi-directional hashes).
+
+h2. Sample
+
+<pre>
+table = {
+  :foo => "Foo",
+  :bar => "Bar",
+  :baz => "Baz"
+}.extend(WithReverseLookup)
+
+table[:foo]   #=> "Foo"
+table["Foo"]  #=> :foo
+</pre>
+
+h2. License
+
+MIT
+
+h2. Copyright
+
+Copyright (C) 2010 Matt Todd.
